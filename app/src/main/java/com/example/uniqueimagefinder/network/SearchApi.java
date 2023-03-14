@@ -11,7 +11,7 @@ public interface SearchApi {
         @Query("key") String api,
         @Query("cx") String cx,
         @Query("searchType") String type,
-        @Query("q") String text //,
-        //@Query("start") int start
+        @Query("q") String text,
+        @Query("start") int start
     );
 }

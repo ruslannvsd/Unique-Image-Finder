@@ -11,15 +11,16 @@
         android:id="@+id/enter_search"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter what you're searching"
-        android:textSize="17sp"
+        android:hint="@string/enter_your_search"
+        android:textSize="20sp"
         android:gravity="center"
         android:maxLength="40"
         android:inputType="text"
         android:maxLines="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill" />
 
     <ScrollView
         android:id="@+id/rv_scroll"
