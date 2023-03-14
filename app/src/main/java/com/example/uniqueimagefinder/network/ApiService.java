@@ -39,6 +39,7 @@ public class ApiService {
     public SearchApi searchApi = retrofit.create(SearchApi.class);
 
     public void getImages(String key, String cx, String type, String text, RecyclerView rv, ImageAdapter ad, Context ctx) {
+        //for (int i = 0, ) {}
         searchApi.searchResults(key, cx, type, text).enqueue(new Callback<>() {
             @Override
             public void onResponse(@NonNull Call<ResponseBody> call, @NonNull Response<ResponseBody> response) {
